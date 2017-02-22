@@ -1,7 +1,7 @@
 # desserts
 Social media app for dessert-lovers
 
-See homepage:
+See home page:
 https://cloud.githubusercontent.com/assets/20544059/23222907/00c1b076-f8ef-11e6-9572-2f8ea2d7c61f.png
 
 See index page:
