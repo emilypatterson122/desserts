@@ -53,7 +53,6 @@ app.use(function (req, res, next) {
 var dessertRoutes = require('./routes/desserts');
 var commentRoutes = require('./routes/comments');
 var indexRoutes = require('./routes/index');
-//var recipeRoutes = require('./routes/recipes');
 //Use routes
 app.use("/desserts", dessertRoutes);
 app.use("/desserts/:id/comments", commentRoutes);
