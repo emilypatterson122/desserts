@@ -22,6 +22,15 @@ app.use(bodyParser.urlencoded({
     extended: true
 })); 
 app.use(methodOverride('_method')) //https://github.com/expressjs/method-override
+
+app.use(function(req, res, next){
+    if(req.headers['x-forwarded-proto' === 'http']){
+        next();
+    } else {
+        res.redirect('http://' + req.hostname + req.url);
+    }
+});
+
 app.use(express.static(__dirname + "/public")) 
 app.use(require('express-session')({
     secret: 'blah'
